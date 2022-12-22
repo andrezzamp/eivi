@@ -1,0 +1,15 @@
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>Get e-mail updates about our latest blog posts and <span>special offers.</span></p>
+        <%= newsletterMessage %>
+    </div>
+
+    <div class="form">
+        <form action="/newsletter" method="POST">
+            <input type="text" placeholder="Your name" name="name" required="true">
+            <input type="email" placeholder="Your email address" name="email" required="true">
+            <button class="normal" type="submit">Sign up</button>
+        </form>
+    </div>
+</section>

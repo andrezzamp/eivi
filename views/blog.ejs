@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include('partials/head'); %>
+<body>
+	<%- include('partials/header'); %>
+    
+	<section id="page-header" class="aboutus-header">
+		<h2>Blog</h2>
+		<p>Latest posts</p>
+	</section>
+
+    <section id="blog">
+        <% posts.forEach(function(post) { %>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/img/blog/<%= post.image %>" alt="">
+            </div>
+            <div class="blog-details">
+                <h4><%= post.title %></h4>
+                <p><%= post.content.substr(0, 100) %></p>
+                <a href="/blog/<%= post.id %>">Read more</a>
+            </div>
+            <h1><%= new Date(post.created_at).toLocaleDateString() %></h1>
+        </div>
+        <% }); %>
+    </section>
+	
+    <!-- <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+    </section> -->
+
+
+	<%- include('partials/newsletter'); %>
+	<%- include('partials/footer'); %>
+</html>

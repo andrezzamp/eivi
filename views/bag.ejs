@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<%- include('partials/head'); %>
+
+<body>
+	
+	<%- include('partials/header'); %>
+
+    <section id="page-header" class="aboutus-header">
+		<h2>Lorem ipsum</h2>
+		<p>Lorem ipsum</p>
+	</section>
+
+    <section id="bag" class="section-p1">
+		<table width="100%">
+			<thead>
+				<tr>
+					<td>Service</td>
+					<td>Price</td>
+					<td>Quantity</td>
+					<td>Subtotal</td>
+					<td>Remove</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Service name</td>
+					<td>$123</td>		
+					<td><input type="number" value="1"></td>
+					<td>$123</td>					
+					<td><a href="#"><i class="far fa-times-circle"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+	<section id="bag-add" class="section-p1">
+		<div id="coupon">
+			<h4>Apply coupon</h4>
+			<div>
+				<input type="text" placeholder="Enter your coupon">
+				<button class="normal">Apply</button>
+			</div>
+		</div>
+
+		<div id="subtotal">
+			<h3>Final Price</h3>
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>$123</td>
+				</tr>
+				<tr>
+					<td>Discount</td>
+					<td>$0</td>
+				</tr>
+				<tr>
+					<td><strong>Total</strong></td>
+					<td><strong>$123</strong></td>
+				</tr>
+			</table>
+			<button class="normal">Checkout</button>
+		</div>
+	</section>
+
+	<%- include('partials/banner'); %>
+
+	<%- include('partials/newsletter'); %>
+
+	<%- include('partials/footer'); %>
+</body>
+
+</html>

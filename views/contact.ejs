@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<%- include('partials/head'); %>
+
+<body>
+	
+	<%- include('partials/header'); %>
+
+	<section id="page-header" class="aboutus-header">
+		<h2>Contact</h2>
+		<p>Send us a message</p>
+	</section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <div class="form">
+                <form action="/contact" method="post">
+                    <input type="text" placeholder="Your name" name="name" required="true">
+                    <input type="email" placeholder="Your email address" name="email" required="true">
+                    <input type="text" placeholder="Subject" name="subject" required="true">
+                    <textarea name="message" cols="30" placeholder="Your message" required="true"></textarea>
+                    <button class="normal">Send</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+	<%- include('partials/newsletter'); %>
+
+	<%- include('partials/footer'); %>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<%- include('partials/head'); %>
+
+<body>
+	
+	<%- include('partials/header'); %>
+
+    <section id="page-header" class="aboutus-header">
+		<h2>Content Creation Brief</h2>
+		<p>Tell us about you and your brand</p>
+	</section>
+
+    <section id="book-box" class="section-p1">
+		<div class="book-group">
+			<h3>Your details</h3>
+		</div>
+        <div class="book-form">
+            <form action="/book-a-package" method="POST">
+                <input type="text" placeholder="Your name" name="name">
+                <input type="email" placeholder="Your email address" name="email">
+                <input type="text" placeholder="Your social media profiles" name="social_media_profiles">
+                <input type="text" placeholder="Website" name="website_url">
+                <input type="phone" placeholder="Phone number" name="phone_number">
+          
+                <h3>Your brand</h3>
+		
+                <input type="text" placeholder="Describe your product or brand in 1 sentence" name="brand_description">
+                <input type="text" placeholder="What is your brand's tone of voice?" name="brand_voice_tone">
+                <input type="text" placeholder="Which of our packages would you like to go for?" name="selected_packages">
+                <input type="text" placeholder="Do you have a view of what topics you'd like covered in your posts?" name="prefered_topics">
+                <input type="text" placeholder="What are your brand colours? Please enter details with colour references." name="brand_colors">
+                <input type="text" placeholder="Who are your key competitors?" name="key_competitors">
+                <input type="text" placeholder="Any images or social media profiles that currently capture the look you are after? Please copy the url here" name="reference_images">
+                <button class="normal" type="submit">Submit</button>
+            </form>
+        </div>
+	</section>
+    
+	<%- include('partials/footer'); %>
+</body>
+
+</html>

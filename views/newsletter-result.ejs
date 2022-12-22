@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<%- include('partials/head'); %>
+
+<body>
+	
+	<%- include('partials/header'); %>
+
+	<%- include('partials/banner'); %>
+
+    <% if(userName) { %>
+        <h1 style="color: green; font-family: Arial, Helvetica, sans-serif;">Your form has been submitted. Thank you, <%= userName %></h1>
+    <% } %>
+
+	<%- include('partials/newsletter'); %>
+
+	<%- include('partials/footer'); %>
+</body>
+
+</html>
